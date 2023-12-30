@@ -1,14 +1,14 @@
 import React from "react";
 import { useRouter } from "next/router";
 
-const Login = () => {
+const Register = () => {
   const router = useRouter();
 
   return (
     <>
       <div className="min-h-screen bg-gray-100 text-gray-900 flex justify-center">
         <div className="max-w-screen-xl m-0 sm:m-10 bg-white shadow sm:rounded-lg flex justify-center flex-1">
-          <div className="lg:w-1/2 xl:w-5/12 p-6 sm:p-12 mt-52">
+          <div className="lg:w-1/2 xl:w-5/12 p-6 sm:p-12 mt-40">
             <div>
               <img src="/images/logo-ruangpedia.png" className="w-mx-auto" />
             </div>
@@ -47,6 +47,11 @@ const Login = () => {
                 <div className="mx-auto max-w-xs">
                   <input
                     className="w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white !text-black focus:text-black"
+                    type="text"
+                    placeholder="Username"
+                  />
+                  <input
+                    className="w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white !text-black focus:text-black mt-5"
                     type="email"
                     placeholder="Email"
                   />
@@ -68,16 +73,16 @@ const Login = () => {
                       <circle cx="8.5" cy={7} r={4} />
                       <path d="M20 8v6M23 11h-6" />
                     </svg>
-                    <span className="ml-">Sign In</span>
+                    <span className="ml-">Register</span>
                   </button>
                   <p className="mt-6 text-xs text-gray-600 text-center">
-                    Don't have account ?{" "}
+                    Have an account ?{" "}
                     <span
                       // href="#"
                       className="border-b border-gray-500 border-dotted text-black cursor-pointer"
-                      onClick={() => router.push("/register")}
+                      onClick={() => router.push("/login")}
                     >
-                      Create one
+                      Sign In
                     </span>
                     {/* and its
                       <a
@@ -106,4 +111,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Register;
