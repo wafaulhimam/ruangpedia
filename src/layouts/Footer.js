@@ -91,7 +91,7 @@ const Footer = () => {
                   >
                     Location :
                   </em>
-                  55 Main Street, New York
+                  Tebet, Jakarta Selatan
                 </li>
                 <li
                   style={{
@@ -121,7 +121,7 @@ const Footer = () => {
                   >
                     Phone Number :
                   </em>
-                  +012 (345) 678 99
+                  +62 (865) 111 22
                 </li>
               </ul>
             </div>

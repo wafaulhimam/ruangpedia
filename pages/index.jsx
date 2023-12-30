@@ -4,8 +4,11 @@ import Layouts from "@/src/layouts/Layouts";
 import { sliderProps } from "@/src/sliderProps";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useRouter } from "next/router";
 
 const Index = () => {
+  const router = useRouter();
+
   return (
     <Layouts>
       {/* Section Started Slider */}
@@ -39,7 +42,7 @@ const Index = () => {
                 data-animate="active"
               >
                 <div className="image kf-image-hover">
-                  <Link href="menu-coffee">
+                  <Link href="register">
                     <img src="images/service2.jpg" alt="image" />
                   </Link>
                 </div>
@@ -57,7 +60,7 @@ const Index = () => {
                 data-animate="active"
               >
                 <div className="image kf-image-hover">
-                  <Link href="services">
+                  <Link href="login">
                     <img src="images/service3.jpg" alt="image" />
                   </Link>
                 </div>
